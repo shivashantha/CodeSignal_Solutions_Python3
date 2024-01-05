@@ -1,0 +1,6 @@
+def solution(inputString):
+  x = inputString[::-1]
+  if x == inputString:
+    return True
+  else:
+    return False
