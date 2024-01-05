@@ -1,0 +1,12 @@
+def solution(statues):
+  statues.sort()
+  i = 0
+  j = 1
+  statues_needed = 0
+  while j < len(statues):
+    if statues[j] - statues[i] != 0:
+      statues_needed = statues_needed - (statues[j]- statues[i]) - 1
+    i += 1
+    j += 1
+  return statues_needed
+    
